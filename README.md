@@ -34,9 +34,12 @@ npm install --save-dev eslint-config-prettier
 ```
 
 ```sh
-npm init playwright@latest -- --ct
 npm install --save-dev jest ts-jest @types/jest
 npm install --save-dev @testing-library/react
+npm install --save-dev jest-environment-jsdom
+npx ts-jest config:init
+
+npm init playwright@latest -- --ct
 
 npm install @mantine/core @mantine/hooks @emotion/react
 ```

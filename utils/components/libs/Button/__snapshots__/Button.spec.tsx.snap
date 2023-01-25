@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render DOM 1`] = `
+<div>
+  <button
+    class="mantine-UnstyledButton-root mantine-Button-root mantine-1m7qy9i"
+    data-button="true"
+    type="button"
+  >
+    <div
+      class="mantine-3xbgk5 mantine-Button-inner"
+    >
+      <span
+        class="mantine-qo1k2 mantine-Button-label"
+      >
+        Button
+      </span>
+    </div>
+  </button>
+</div>
+`;
