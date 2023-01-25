@@ -1,0 +1,18 @@
+{
+    "all": true,
+    "include": [
+        "**/*.tsx",
+        "**/*.ts"
+    ],
+    "exclude": [
+        "**/*.config.ts",
+        "**/*.config.js",
+        "**/*.d.ts",
+        "**/pages/api/**/*.*",
+        "__tests__",
+        "tests"
+    ],
+    "reporter": [
+        "html"
+    ]
+}

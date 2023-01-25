@@ -6,7 +6,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test-ct": "playwright test -c playwright-ct.config.ts"
+    "test": "jest",
+    "test-ct": "playwright test -c playwright-ct.config.ts",
+    "create-report": "nyc report --reporter html --reporter text --reporter json -t coverage --report-dir coverage/summary",
+    "coverage": "npm run test && npm run test-ct && npm run create-report"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
