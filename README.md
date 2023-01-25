@@ -40,6 +40,13 @@ npm install --save-dev jest-environment-jsdom
 npx ts-jest config:init
 
 npm init playwright@latest -- --ct
+```
 
+```sh
+npm install --save-dev babel-plugin-istanbul nyc
+```
+
+```sh
 npm install @mantine/core @mantine/hooks @emotion/react
 ```
+
