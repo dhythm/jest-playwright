@@ -9,4 +9,5 @@ git init
 
 npm init playwright@latest -- --ct
 npm install --save-dev jest ts-jest @types/jest
+npm install --save-dev @testing-library/react
 ```
