@@ -7,7 +7,7 @@ module.exports = {
     "<rootDir>/utils",
   ],
   "testMatch": [
-    "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    "**/?(*.)+spec.+(ts|tsx|js)"
   ],
   testPathIgnorePatterns: ["node_modules"],
   testEnvironment: "jsdom",

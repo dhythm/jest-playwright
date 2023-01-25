@@ -6,9 +6,9 @@ type Props = ComponentProps<typeof MtTextInput>;
 export const TextInput = (props: Props) => {
   return (
     <MtTextInput
-      radius="xl"
-      size="md"
-      placeholder="Search questions"
+      radius='xl'
+      size='md'
+      placeholder='Search questions'
       {...props}
     />
   );
