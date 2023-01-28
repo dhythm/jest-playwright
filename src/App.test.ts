@@ -1,11 +1,10 @@
-import { test } from './baseFixtures';
+import { test, expect } from './baseFixtures';
 
 test.beforeEach(async ({ page }) => {
-  // await page.goto("http://127.0.0.1:5173/")
-  await page.goto("/")
+  await page.goto("http://localhost:5173/")
 })
 
 test('should be renderred', async ({ page }) => {
-  await page.waitForSelector(".App")
+  await expect(page.getByText('Vite + React')).toBeVisible()
 });
 
