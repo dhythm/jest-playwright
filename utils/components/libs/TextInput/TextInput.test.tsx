@@ -1,7 +1,6 @@
 import { MantineProvider } from '@mantine/core';
-import { expect } from '@playwright/experimental-ct-react';
 import { TextInput } from './TextInput';
-import { test } from "@test"
+import { test, expect } from "../helper/baseFixtures"
 
 test('render component', async ({ mount, page }) => {
   await mount(

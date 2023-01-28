@@ -22,9 +22,6 @@
     "paths": {
       "@components": [
         "./utils/components/libs/index.ts"
-      ],
-      "@test": [
-        "./utils/test/index.ts"
       ]
     }
   },

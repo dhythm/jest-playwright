@@ -1,5 +1,14 @@
 import type { PlaywrightTestConfig } from '@playwright/experimental-ct-react';
 import { devices } from '@playwright/experimental-ct-react';
+import tsconfig from './tsconfig.json'
+import { resolve } from "path";
+
+const alias = Object.entries(tsconfig.compilerOptions.paths).reduce<{
+  [key: string]: string
+}>((acc, [key, value]) => {
+  acc[key] = `${__dirname}/${value[0].replace(/\/index\..*/, '/')}`
+  return acc
+}, {})
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -30,6 +39,9 @@ const config: PlaywrightTestConfig = {
 
     /* Port to use for Playwright component endpoint. */
     ctPort: 3100,
+    ctViteConfig: {
+      resolve: {},
+    }
   },
 
   /* Configure projects for major browsers */
