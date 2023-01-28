@@ -2,6 +2,8 @@ import type { PlaywrightTestConfig } from '@playwright/experimental-ct-react';
 import { devices } from '@playwright/experimental-ct-react';
 import tsconfig from './tsconfig.json'
 import { resolve } from "path";
+import istanbul from 'vite-plugin-istanbul'
+
 
 const alias = Object.entries(tsconfig.compilerOptions.paths).reduce<{
   [key: string]: string
@@ -40,6 +42,15 @@ const config: PlaywrightTestConfig = {
     /* Port to use for Playwright component endpoint. */
     ctPort: 3100,
     ctViteConfig: {
+      plugins: [
+        // tsconfigPaths(),
+        // react(),
+        // macrosPlugin(),
+        istanbul({
+          forceBuildInstrument: true,
+        }),
+      ],
+
       resolve: {},
     }
   },
