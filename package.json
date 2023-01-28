@@ -7,6 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "jest",
+    "test-e2e": "npx playwright test",
     "test-ct": "playwright test -c playwright-ct.config.ts",
     "create-report": "nyc report --reporter html --reporter text --reporter json -t coverage --report-dir coverage/summary",
     "coverage": "npm run test && npm run test-ct && npm run create-report"
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@playwright/experimental-ct-react": "^1.30.0",
+    "@playwright/test": "^1.30.0",
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.4.0",
     "@types/react": "^18.0.26",
