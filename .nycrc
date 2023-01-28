@@ -10,7 +10,9 @@
         "**/*.d.ts",
         "**/pages/api/**/*.*",
         "__tests__",
-        "tests"
+        "tests",
+        "helper",
+        "**/baseFixtures.ts"
     ],
     "reporter": [
         "html"
