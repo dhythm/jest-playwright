@@ -11,7 +11,6 @@
         "**/pages/api/**/*.*",
         "__tests__",
         "tests",
-        "helper",
         "**/baseFixtures.ts"
     ],
     "reporter": [
