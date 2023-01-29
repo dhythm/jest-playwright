@@ -15,5 +15,7 @@
     ],
     "reporter": [
         "html"
-    ]
+    ],
+    "report-dir": "./coverage",
+    "temp-dir": "./coverage"
 }

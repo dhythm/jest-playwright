@@ -18,6 +18,8 @@ module.exports = {
     "!**/index.ts",
     "!**/test/**/*.*"
   ],
+  coverageDirectory: "./coverage",
+  coverageReporters: ["json"],
   transform: {
     "^.+\\.(ts|tsx)$": ["ts-jest"],
   }
