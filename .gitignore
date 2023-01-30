@@ -35,3 +35,4 @@ coverage/
 /playwright/.cache/
 
 .nyc_output/
+playwright-coverage/

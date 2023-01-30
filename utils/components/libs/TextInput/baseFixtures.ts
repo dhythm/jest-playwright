@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as crypto from 'crypto';
 import { test as baseTest } from '@playwright/experimental-ct-react';
 
-const istanbulCLIOutput = path.join(process.cwd(), '.nyc_output');
+const istanbulCLIOutput = path.join(process.cwd(), 'playwright-coverage');
 
 export function generateUUID(): string {
   return crypto.randomBytes(16).toString('hex');
